@@ -1,11 +1,13 @@
 USE bamazon;
 CREATE TABLE products (
-  item_id INT NOT NULL AUTO_INCREMENT,
-  product_name VARCHAR(45) NULL,
-  department_name DECIMAL(10,2) NULL,
-  price INTEGER,
-  stock_quantity INT NULL
+  item_id INTEGER,
+  product_name TEXT,
+  department_name TEXT,
+  price DECIMAL,
+  stock_quantity INTEGER
 );
+INSERT INTO products (item_id, product_name, department_name, price, stock_quantity)
+VALUES(1, "Brainiac", "Beauty", 10, 5);
 INSERT INTO products (item_id, product_name, department_name, price, stock_quantity)
 VALUES(2, "Peaches", "Produce", 3, 5);
 INSERT INTO products (item_id, product_name, department_name, price, stock_quantity)
